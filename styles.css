@@ -1,12 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
 
-body
-{
+body {
     font-family: 'Work Sans', sans-serif;
     font-weight: regular;
 }
-#projects
-{
+
+.navigation {
+  background-color: #292929;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px; /* Adjust the margin-top as needed */
+  border-radius: 30px;
+  border: none;
+  max-width: 1000px;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* White color for the links */
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    border-radius: 20px; /* Rounded corners for the links */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background with slight opacity */
+}
+
+.nav-link:hover {
+    color: #FFA500; /* Orange color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly increased opacity on hover */
+}
+
+#projects {
     width: 1200px;
     max-width: 100%;
     margin-top: 2px;
@@ -14,72 +45,75 @@ body
     padding: 5px;
     display: flex;
 }
-#About
-{
+
+#About {
     width: 1200px;
     max-width: 100%;
     margin-left: 50px;
-    padding: 1.2em;
-    height: 860px;
+    padding: 120px;
+    height: 490px;
     display: grid;
-}
-.myimage
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 1/span 5;
-    padding: 100px 0;
-}
-.mybio
-{
-    margin-left: 30px;
-    grid-column: 7/span 6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 
-h1{
-    font-size: 4rem;
+.mybio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between the image and the text */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bio-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.bio-content h1, .bio-content h3 {
+  margin: 0; /* Remove default margins for better alignment */
+  text-align: center;
+}
+
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.basic-info {
+  margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 1px;
     margin-bottom: .785em;
     position: relative;
 }
-h3{
+
+h3 {
     font-size: 40px;
     text-decoration: wavy;
-    
 }
-.basic-info {
-    font-size: 1.5rem;
-    line-height: 155%;
-    padding-top: 2em;
-    color: grey;
-  }
 
-.navbtn{
+
+.navbtn {
     text-align: center;
-    margin-top: 50px;
-  }
-  .navbtn a:hover {
-    color: #FFA500;
-    border: 1px solid #FFA500;
-  }
-  .navbtn a
-  {
-    border: 2px solid grey;
-    margin: 10px;
-    color: black;
-    border-radius: 25px;
-    padding: 10px;
-    width: 20px;
-    display: inline;
-    text-decoration: none;
-    font-weight: bold;
-  }
- 
-  .myprojectpic1
-{
+    margin-top: 20px; /* Reduce the space between sections */
+}
+
+.myprojectpic1 {
     position: relative;
     height: 0;
     overflow: hidden;
@@ -87,72 +121,135 @@ h3{
     padding-right: 15px;
     padding-left: 0; 
 }
-.myprojectpic1:hover
-{
-  transform: scale(1.03);
+
+.myprojectpic1:hover {
+    transform: scale(1.03);
 }
-.project1 
-{
-  margin-top: 3px;
-  margin-left: 50px;
+
+.project1 {
+    margin-top: 3px;
+    margin-left: 50px;
 }
-.myprojectpic2
-{
+
+.myprojectpic2 {
     position: relative;
     height: 0;
     overflow: hidden;
     padding-bottom: 20%;
     padding-right: 10px;
     padding-left: 0;
-    
-}
-.myprojectpic2:hover
-{
-  transform: scale(1.03);
 }
 
-.project2 
-{
-  margin-left: 50px;
+.myprojectpic2:hover {
+    transform: scale(1.03);
 }
+
+.project2 {
+    margin-left: 50px;
+}
+
 .project-description {
-  padding-block: 20px;
-  max-width: 70ch;
-  font-size: 1.5rem;
-  line-height: 155%;
-  color: grey;
-  margin-top: 5px;
-}
-footer
-{
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-#social-media
-{
-  display: flex;
-  text-align: center;
-  justify-content: center;  
+    padding-block: 20px;
+    max-width: 70ch;
+    font-size: 1.5rem;
+    line-height: 155%;
+    color: grey;
+    margin-top: 5px;
 }
 
-#social-media ul
-  {
+.skills {
+  background: #f7f8fd;
+  padding: 50px 0;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .skills {
+    margin-top: 100%; /* Adjusted margin for smaller screens */
+  }
+}
+
+.skills .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.skills .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #373737;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.skills .section-title p {
+  margin-bottom: 0;
+}
+
+.skills .skills-content {
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.skills .skills-content .progress {
+  margin-bottom: 25px;
+  height: 40px; /* Adjust the height of the progress bars */
+}
+
+.skills .skills-content .progress .skill {
+  font-size: 18px;
+  color: #373737;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  line-height: 40px; /* Match the line height with the height of the progress bars */
+  overflow: hidden; /* Ensure skill names are fully visible */
+}
+
+
+.skills .skills-content .progress .skill .val {
+  float: right;
+  color: #6c757d; /* Set the color of the percentage */
+  font-weight: bold; /* Optionally, make the percentage bold */
+  margin-left: 10px; /* Add some space between the skill name and percentage */
+}
+
+.skills .skills-content .progress .progress-bar {
+  background: #ffc107;
+  border-radius: 25px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#social-media {
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+}
+
+#social-media ul {
     list-style: none;
     display: flex;
     align-items: center;
-   
-  }
-  #social-media li
-{
-  margin-left: 10px;
-  font-size: 24px;
 }
+
+#social-media li {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
 #social-media i {
-  color: white;
-  transition: all 0.2s ease-in-out;
+    color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 #social-media i:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
