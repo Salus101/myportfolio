@@ -164,7 +164,7 @@ h3 {
 }
 @media (max-width: 768px) {
   .skills {
-     margin-top: 40px;      /* predictable spacing on mobile */
+/* predictable spacing on mobile */
     padding: 28px 12px;    /* tighter internal spacing */
     position: relative;    /* ensure normal flow */
     z-index: 1;
@@ -256,4 +256,5 @@ footer {
 #social-media i:hover {
     transform: scale(1.2);
 }
+
 
